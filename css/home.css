@@ -1,0 +1,153 @@
+
+/* 
+   HOMEPAGE HERO SECTION
+   
+ */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.25)
+        ),
+        url('../images/hero.jpg') center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label,
+.section-label {
+    color: #b7f36b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 82px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #b7f36b;
+}
+
+.hero-content > p:not(.hero-label) {
+    color: #dddddd;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+
+/* 
+   HOMEPAGE ABOUT SECTION
+ */
+
+.about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-section h2,
+.facilities-section h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about-section > p:not(.section-label) {
+    color: #bbbbbb;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.text-link {
+    color: #b7f36b;
+    font-weight: bold;
+}
+
+
+/* 
+   FACILITIES SECTION
+ */
+
+.facilities-section {
+    background-color: #1c221e;
+    padding: 90px 0;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.facility-card {
+    background-color: #292f2b;
+    padding-bottom: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.facility-card h3,
+.facility-card p {
+    margin: 15px 20px 0;
+}
+
+.facility-card p {
+    color: #bbbbbb;
+}
+
+
+/* 
+   JOIN SECTION
+ */
+
+.join-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.join-section h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.join-section p {
+    color: #bbbbbb;
+    margin-bottom: 25px;
+}
+
+
+/* 
+   HOMEPAGE MOBILE STYLING
+ */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 500px;
+        padding: 50px 5%;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,205 @@
+
+/* 
+   MEMBER DASHBOARD
+ */
+
+.dashboard-section {
+    padding: 80px 0 100px;
+    min-height: 650px;
+}
+
+.dashboard-heading {
+    margin-bottom: 40px;
+}
+
+.dashboard-heading h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.dashboard-heading h1 span {
+    color: #b7f36b;
+}
+
+.dashboard-heading > p:last-child {
+    color: #bbbbbb;
+}
+
+.dashboard-card {
+    background-color: #1c221e;
+    border: 1px solid #363d38;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 900px;
+}
+
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-top h2 {
+    font-size: 36px;
+}
+
+.dashboard-price {
+    color: #bbbbbb;
+    margin-top: 5px;
+}
+
+
+/* 
+   MEMBERSHIP STATUS
+ */
+
+.status-active,
+.status-pending,
+.status-cancelled {
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-active {
+    background-color: #25452a;
+    color: #b7f36b;
+}
+
+.status-pending {
+    background-color: #51421f;
+    color: #ffdb80;
+}
+
+.status-cancelled {
+    background-color: #542c2c;
+    color: #ffaaaa;
+}
+
+
+/* 
+   MEMBER DETAILS
+ */
+
+.dashboard-divider {
+    height: 1px;
+    background-color: #444444;
+    margin: 30px 0;
+}
+
+.dashboard-card > h3 {
+    margin-bottom: 25px;
+}
+
+.member-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.member-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    overflow-wrap: anywhere;
+}
+
+.member-details span {
+    color: #999999;
+    font-size: 13px;
+}
+
+.member-details strong {
+    color: white;
+    font-size: 15px;
+}
+
+
+/* 
+   DASHBOARD ACTIONS
+ */
+
+.dashboard-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Original cancellation button styling */
+
+.cancel-button {
+    background-color: #713737;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cancel-button:hover {
+    background-color: #984444;
+}
+
+.logout-button {
+    background-color: #b7f36b;
+    color: #111111;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: white;
+}
+
+
+/* Original additional cancellation styling.
+   Kept in its original order to preserve the cascade. */
+
+.cancel-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 22px;
+    background-color: #3a2929;
+    border: 1px solid #a94b4b;
+    color: #ff8585;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #a94b4b;
+    color: white;
+}
+
+
+/* 
+   DASHBOARD MOBILE DESIGN
+ */
+
+@media (max-width: 600px) {
+
+    .dashboard-card {
+        padding: 25px 18px;
+    }
+
+    .dashboard-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .member-details {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-heading h1 {
+        font-size: 29px;
+    }
+
+}

@@ -1,0 +1,169 @@
+
+/* 
+   REGISTRATION SECTION
+ */
+
+.register-section {
+    background-color: #111111;
+    padding: 90px 20px;
+    min-height: 650px;
+}
+
+.register-container {
+    max-width: 650px;
+    margin: auto;
+    background-color: #1c221e;
+    padding: 45px;
+    border-radius: 10px;
+    border: 1px solid #363d38;
+}
+
+.register-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.register-heading h1,
+.success-message h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.register-heading h1 span {
+    color: #b7f36b;
+}
+
+.register-heading > p:last-child {
+    color: #bbbbbb;
+}
+
+
+/* 
+   REGISTRATION FORM
+ */
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.registration-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 15px;
+    background-color: #292f2b;
+    color: white;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: #b7f36b;
+}
+
+.registration-form select option {
+    background-color: #292f2b;
+}
+
+.privacy-note {
+    color: #aaaaaa;
+    font-size: 12px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.register-button {
+    background-color: #b7f36b;
+    color: #111111;
+    border: none;
+    padding: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-button:hover {
+    background-color: white;
+}
+
+.form-error {
+    background-color: #492525;
+    color: #ffaaaa;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+/* 
+   REGISTRATION SUCCESS
+ */
+
+.success-message {
+    text-align: center;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #b7f36b;
+    color: #111111;
+    font-size: 40px;
+    margin: 0 auto 25px;
+}
+
+.success-message > p:not(.section-label) {
+    color: #bbbbbb;
+    margin-bottom: 25px;
+}
+
+.confirmation-details {
+    background-color: #292f2b;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.confirmation-details p {
+    padding: 10px 0;
+    border-bottom: 1px solid #444444;
+    color: #dddddd;
+    overflow-wrap: anywhere;
+}
+
+.confirmation-details strong {
+    color: #b7f36b;
+}
+
+
+/* 
+   REGISTRATION MOBILE DESIGN
+ */
+
+@media (max-width: 600px) {
+
+    .register-container {
+        padding: 25px 20px;
+    }
+
+    .register-heading h1,
+    .success-message h1 {
+        font-size: 29px;
+    }
+
+}
